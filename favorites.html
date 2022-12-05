@@ -6,39 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Week 2 Discussion</title>
+
+    <title>My Favorite Pup</title>
 </head>
 <body>
 
     <header>
-        <a class = "skip" href="#skip">Skip to Main Content</a>
+        <a class = "skip" href="#main">Skip to Main Content</a>
         <nav>
-            <ul>
+            <div id="nav_bar">
+                <ul class="nav">
                 <li><a href = "index.html">Home</a></li>
-                <li><a href="gallery.html">Puppy Gallery</a></li>
-                <li><a href="favorites.html">My Favorite Puppy</a></li>
-            </ul>
+                <li><a href="gallery.html">Puppy Gallery & Info</a></li>
+                <li class="active"><a href="favorites.html">My Favorite Pup</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>My Favorite Pup</h1>
-        <img src = "images/pupcupsakai.jpeg" width="800" alt = "">
     </header>
 
-    <skipto class="about" id="skip"></skipto>
-    <main>
-        <h2>Facts about my Pup</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <h3>Top Three Reasons I picked My Topic</h3>
-        <ul>
-            <li>A</li>
-            <li>B</li>
-            <li>C</li>
-        </ul>
+    <main id="main">
+        <div class="intro">
+        <h1 id="favoritestitletext">My Favorite Pup</h1>
+        <img src="images/pupcupsakai.jpeg" alt="pic of sakai" id="favemainimage">
+        <p> My dog is one of the biggest reason why I want to be as successful as possible. As long as I can provide for my furry pal, I'm happy. It might seem a bit dramatic to say so, but it was a long journey to get him in our arms to begin with.</p>
+        
+        <div class = "intro">
+            <h1 id="gallerytitletext"> The Journey</h1>
+            <p>
+                A little bit about how we brought Sakai home and to 3 different states so far!.
+            </p>
+        </div>  
+        <div class="journeygallery">
+            <div class="img" id="triptogets-img">
+                <a href = "images/triptogets.jpeg" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "Mifflinberg PA" 
+                data-alt = "middle of nowhere just for a puppy">
+                    <img class="journeyimg" src="images/triptogets.jpeg" alt="some random area in PA">
+                </a>
+                <p>The journey started in PA, driving through a lot of remote </p>
+              </div>
+            <div class="img" id="babysakai">
+                <a href = "images/satairport.png" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "Airport" 
+                data-alt = "picture of sakai at airport">
+                    <img class="journeyimg" src="images/satairport.png" alt="puppy at airport">
+                </a>
+                <p>After we got in in PA it was off to CA. He really didn't like the airport.</p>
+            </div>
+            <div class="img" id="babysakaiatpark">
+                <a href = "images/spuppyatpark.jpeg" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "Dog Park" 
+                data-alt = "picture of sakai at dog park">
+                    <img class="journeyimg" src="images/spuppyatpark.jpeg" alt="puppy at airport">
+                </a>
+                <p>He defintely did not like San Jose, but he did love the dog park.</p>
+            </div>
+            <div class="img" id="gettingcomfy">
+                <a href = "images/seattlegettingcomfy.png" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "At home comfy" 
+                data-alt = "Sakai sleeping comfy">
+                    <img class="journeyimg" src="images/seattlegettingcomfy.png" alt="puppy sleeping">
+                </a>
+                <p>Still a bit weary, this was proof that he was slowly, but surely getting more comfortable.</p>
+            </div>
+            <div class="img" id="gettingcomfy">
+                <a href = "images/sakaiinseattle.jpeg" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "At home comfy" 
+                data-alt = "Sakai sleeping comfy">
+                    <img class="journeyimg" src="images/sakaiinseattle.jpeg" alt="puppy sleeping">
+                </a>
+                <p>After spending time in San Jose, I took him to Seattle with me for my internship. His company really helped me through the summer.</p>
+            </div>
+            <div class="img" id="gettingcomfy">
+                <a href = "images/sakaiinmichigan.jpeg" target="_blank" 
+                data-lightbox="journey" 
+                data-title = "At home comfy" 
+                data-alt = "Sakai sleeping comfy">
+                    <img class="journeyimg" src="images/sakaiinmichigan.jpeg" alt="puppy sleeping">
+                </a>
+                <p>It's hard to believe that he's grown so much, but he's here in Michigan now. Much more brave and confident than before.</p>
+            </div>
+        </div>
     </main>
-
+    <footer>
+        <p>&copy; Zochi Moreno-Martinez 2022</p>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 0,
+          'fadeDuration': 0,
+          'imageFadeDuration': 0,
+          'wrapAround': True,
+        })
+    </script>
 </body>
 </html>

@@ -1,44 +1,168 @@
-a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-  a.skip:focus{
-    top:20px;
-    color: black;
-    text-decoration-style: solid;
-  }
-body{
-    margin:5px;
-    padding:5px;
-    line-height:1.15;
- }
-  
- h1{
-    font-weight: bold;
-    font-size: large;
- }
- h2, h3{
-    font-weight: bold;
-    margin-top:15px;
-  
- }
- ul li{
-    margin-left: 25px;
-    list-style-type: upper-roman;
+
+header, footer{
+   background-image: url("../images/backgroundimage.jpg");
 }
-nav li{
-    display: inline-block;
-    align-items: right;
-    background-color:aqua;
-    border: solid 3px #000000;
-    border-radius: 20px;
-    padding: 15px;
-    max-width: 500px;
+
+header, .nav , footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font: bold 15px Verdana;
+   background-color: #C4A484;
+   padding: 5px 15px 5px 15px;
+}
+
+.nav a:hover{
+   background-color: white;
+   color: black;
+}
+
+
+#nav_bar ul li.active{
+   border: 2px solid white;
+   padding: 2px;
+}
+
+body > header{
+   position: sticky;
+   top: 0;
+}
+
+a.skip{
+   background: white;
+   left: 0;
+   padding: 6px;
+   position: absolute;
+   top: -40px;
+   -webkit-transition: top 1s ease-out;
+   transition: top 1s ease-out;
+   z-index: 1;
+}
+ 
+a.skip:focus{
+   top:20px;
+   color: black;
+   text-decoration-style: solid;
+}
+
+a:link, a:visited{
+   color: black;
+}
+
+body{
+   font: 15px Verdana;
+   background-color: antiquewhite;
+}
+
+.intro{
+   line-height: 1.5;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+#mainpic{
+   border-radius: 25px;
+   display: block;
+   margin: 0 auto 20px auto;
+}
+
+#hometitletext, #gallerytitletext, #favoritestitletext{
+   font: bold 25px Verdana;
+   text-align: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+
+.breedimg .favemainimage .journeyimg{
+   width: 90%;
+   height: 90%;
+}
+
+footer{
+   margin-top: 30px;
+   font-weight: bold;
+}
+footer p{
+   background-color: #C4A484;
+   padding: 5px 15px 5px 15px;
+}
+
+.breedsgallery{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1em;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.journeygallery{
+   display: grid;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-left: 5%;
+   margin-right: 5%;
+   gap: 10px;
+}
+
+.img{
+   background-color: #B19C6C;
+   padding-top: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
+   border-radius: 25px;
+} 
+
+.img:hover{
+   -webkit-transform: scale(0.9);
+   transform: scale(0.9);
+}
+
+
+@media screen and (min-width: 600px){
+   .nav{
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   nav{
+      width: 80%;
+   }
+
+   #nav_bar ul li.active{
+      padding: 10px;
+   }
+
+   .breedsgallery{
+      grid-template-columns: 1fr 1fr;
+   }
+   .journeygallery{
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media screen and (min-width: 1050px){
+   header, .nav{
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px 10px 10px 10px;
+   }
+
+   nav{
+       width: 60%;
+   }
+
+   .breedsgallery{
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   .journeygallery{
+      grid-template-columns: 1fr 1fr;
+   }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+   .img:hover{
+       -webkit-transform: scale(1);
+       transform: scale(1);
+   }
 }

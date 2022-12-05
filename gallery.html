@@ -7,34 +7,126 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-      <title>Gallery Page</title>
+    <title>Gallery Page</title>
 </head>
 <body>
     <header>
-        <a class = "skip" href="#skip">Skip to Main Content</a>
+        <a class = "skip" href="#main">Skip to Main Content</a>
         <nav>
-            <ul>
+            <div id="nav_bar">
+                <ul class="nav">
                 <li><a href = "index.html">Home</a></li>
-                <li><a href="gallery.html">Puppy Gallery</a></li>
-                <li><a href="favorites.html">My Favorite Puppy</a></li>
+                <li class="active"><a href="gallery.html">Puppy Gallery & Info</a></li>
+                <li><a href="favorites.html">My Favorite Pup</a></li>
             </ul>
-        </nav>
-        <h1>Week Two discussion</h1>
-        <img src = "images/cover_image.jpg" width="800" alt = "">
+        </div>
+    </nav>
     </header>
     
-    <skipto class="about" id="skip"></skipto>
-    <main>
-        <div class = "gallery">
-            <img src="images/GermanShepard.jpg" width = "200" alt="fancy tea mug with black_tea">
-            <img src="images/Beagle.jpg"  width = "200" alt="an indian chai">
-            <img src="images/BorderCollie.jpg" width = "200" alt="a dark tea option">
-            <img src="images/Chihuaha.jpg" width = "200" alt="a loose leaf green tea">
-            <img src="images/Chowchow.jpg" width = "200" alt="light tea with lemon and ginger">
-            <img src="images/Pitbull.jpg" alt="collection of loose leaf tea">
-            <img src="images/Pug.jpg" alt="a icy Long Island tea (alcoholic)">
-            <img src="images/ShibaInu.jpg" alt="a icy Long Island tea (alcoholic)">
-            </div>  
+    <main id="main">
+        <div class = "intro">
+            <h1 id="gallerytitletext"> Puppy Gallery & Information</h1>
+            <p>
+                The Fédération Cynologique Internationale (FCI), also known as the World Canine Organization, is an international federation of kennel clubs from 84 countries worldwide, excluding the United States, the United Kingdom, and Australia. In these countries, the respective governing bodies for determining dog breeds and breed standards are the American Kennel Club (AKC), British Kennel Club (KC), and Australian National Kennel Council (ANKC). These organizations are responsible for determining which dogs meet the qualifications of a breed, as well as for establishing and enforcing breed standards in each of the regions they serve.
+            </p>
+        </div>  
+        <h2 id="gallerytitletext">Breeds</h2>
+        <div class="breedsgallery">
+
+            <div class="img" id="germanshepard-img">
+                <a href = "images/GermanShepard.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "German Shepard" 
+                data-alt = "picture of german shepard">
+                    <img class="breedimg" src="images/GermanShepard.jpg" alt="German Shepard">
+                </a>
+                <p>German Shepard</p>
+              </div>
+            <div class="img" id="beagle-img">
+                <a href = "images/Beagle.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Beagle" 
+                data-alt = "picture of beagle">
+                    <img class="breedimg" src="images/Beagle.jpg" alt="Beagle">
+                </a>
+                <p>Beagle</p>
+            </div>
+            <div class="img" id="bordercollie-img">
+                <a href = "images/BorderCollie.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Border Collie" 
+                data-alt = "picture of border collie">
+                    <img class="breedimg" src="images/BorderCollie.jpg" alt="Border Collie">
+                </a>
+                <p>Border Collie</p>
+            </div>
+            <div class="img" id="chihuaha-img">
+                <a href = "images/Chihuaha.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Chihuaha" 
+                data-alt = "picture of chihuaha">
+                    <img class="breedimg" src="images/Chihuaha.jpg" alt="Chihuaha">
+                </a>
+                <p>Chihuaha</p>
+            </div>
+            <div class="img" id="chowchow-img">
+                <a href = "images/Chowchow.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Chow Chow" 
+                data-alt = "picture of Chow Chow">
+                    <img class="breedimg" src="images/Chowchow.jpg" alt="Chow Chow">
+                </a>
+                <p>Chow Chow</p>
+            </div>
+            <div class="img" id="pitbull-img">
+                <a href = "images/Pitbull.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Pitbull" 
+                data-alt = "picture of pitbull">
+                    <img class="breedimg" src="images/Pitbull.jpg" alt="Pitbull">
+                </a>
+                <p>Pitbull</p>
+            </div>
+            <div class="img" id="pug-img">
+                <a href = "images/Pug.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Pug" 
+                data-alt = "picture of pug">
+                    <img class="breedimg" src="images/Pug.jpg" alt="Pug">
+                </a>
+                <p>Pug</p>
+            </div>
+            <div class="img" id="shibainu-img">
+                <a href = "images/ShibaInu.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Shiba Inu" 
+                data-alt = "picture of shiba inu">
+                    <img class="breedimg" src="images/ShibaInu.jpg" alt="Shiba Inu">
+                </a>
+                <p>Shiba Inu</p>
+            </div>
+            <div class="img" id="poodle-img">
+                <a href = "images/poodle.jpg" target="_blank" 
+                data-lightbox="breeds" 
+                data-title = "Poodle" 
+                data-alt = "Picture of a Poodle">
+                    <img class="breedimg" src="images/poodle.jpg" alt="Poodle">
+                </a>
+                <p>Shiba Inu</p>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p>&copy; Zochi Moreno-Martinez 2022</p>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 0,
+          'fadeDuration': 0,
+          'imageFadeDuration': 0,
+          'wrapAround': True,
+        })
+    </script>
 </body>
 </html>

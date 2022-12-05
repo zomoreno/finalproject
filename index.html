@@ -7,38 +7,31 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Main Page</title>
+    <title>DOGS</title> 
 </head>
 <body>
-    <a class = "skip" href="#skip">Skip to Main Content</a>
-
     <header>
+        <a class= "skip" href="#main">Skip to Main Content</a>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="gallery.html">Puppy Gallery</a></li>
-                <li><a href="favorites.html">My Favorite Puppy</a></li>
-            </ul>
+            <div id="nav_bar">
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Puppy Gallery & Info</a></li>
+                    <li><a href="favorites.html">My Favorite Pup</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Everyone Loves Pups</h1>
-        <img src = "images/multipledogs.jpg" width="800" alt = "">
     </header>
-    <skipto class="about" id="skip"></skipto>
-    <main>
-        <h2>Who Doesn't Love Pups?</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, voluptatum expedita quidem, repellat quae, fugit earum aspernatur repellendus illo eum impedit voluptates quibusdam laudantium dolore non deleniti error? Suscipit, quae?
-        </p>
-        <h3>Top Three Reasons We picked Our Topic</h3>
-        <ul>
-            <li>A</li>
-            <li>B</li>
-            <li>C</li>
-        </ul>
+    <main id="main">
+        <div class="intro">
+            <img src="images/multipledogs.jpg" alt="3 different dogs in a line" id="mainpic">
+            <h1 id="hometitletext">Humankind's Bestfriend</h1>
+            <p>Dogs are a quintisential part of so many peoples lives. Mine included. Officially A dog is a domestic mammal of the family Canidae and the order Carnivora. Its scientific name is Canis lupus familiaris. Dogs are a subspecies of the gray wolf, and they are also related to foxes and jackals. Dogs are one of the two most ubiquitous and most popular domestic animals in the world.</p>
+            <a href="https://www.britannica.com/animal/dog">Source</a>
+        </div>
     </main>
-
+    <footer>
+        <p>&copy; Zochi Moreno-Martinez 2022</p>
+    </footer>
 </body>
 </html>
