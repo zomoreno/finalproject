@@ -9,6 +9,7 @@
 
     <title>Gallery Page</title>
 </head>
+<link href="path/to/lightbox.css" rel="stylesheet" />
 <body>
     <header>
         <a class = "skip" href="#main">Skip to Main Content</a>
@@ -32,8 +33,7 @@
         </div>  
         <h2 id="gallerytitletext">Breeds</h2>
         <div class="breedsgallery">
-
-            <div class="img" id="germanshepard-img">
+            <div class="img">
                 <a href = "images/GermanShepard.jpg" target="_blank" 
                 data-lightbox="breeds" 
                 data-title = "German Shepard" 
@@ -119,13 +119,12 @@
     <footer>
         <p>&copy; Zochi Moreno-Martinez 2022</p>
     </footer>
-    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="path/to/dist/js/lightbox-plus-jquery.js"></script>
+
     <script>
         lightbox.option({
-          'resizeDuration': 0,
-          'fadeDuration': 0,
-          'imageFadeDuration': 0,
-          'wrapAround': True,
+          'resizeDuration': 10,
+          'wrapAround': true
         })
     </script>
 </body>
